@@ -1,0 +1,414 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="en-US">
+
+
+</head>
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+
+<%@include file="/WEB-INF/views/include/common.jsp"%>
+
+
+<!--  -->
+
+
+
+
+
+<!--  -->
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: white;
+		color: white;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+</style>
+
+<style>
+/* .container {
+  width: 70%;
+  height: 200px;
+  overflow: hidden;
+}
+.container img {
+ max-height: 100 %;
+  width: auto; 
+  display: block;
+  
+} */
+
+.main--wrapper img {
+    max-width: auto;
+    max-height: auto;
+    display: block;
+    margin: 0px auto;
+ 
+}
+
+
+</style>
+<script>
+      let msg = '${msg}';
+      if(msg != '') {
+        alert(msg);
+      }
+
+    </script>
+
+
+</head>
+
+
+	<%@include file="/WEB-INF/views/include/header.jsp"%>
+	<%@include file="/WEB-INF/views/include/categoryMenu.jsp"%>
+<body style="background-color: #fff" >
+
+<!--  부트스트랩 확인가능 
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active carousel-item-left">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-next carousel-item-left">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+-->
+
+
+
+<!-- 0차-------------------------------------- -->
+
+      <!-- 이미지 슬라이드 스크립트 -->
+      <script>
+      	$(document).ready(function () {
+    	        $('.bxslider').bxSlider({ // 클래스명 주의!
+    	            auto: true, // 자동으로 애니메이션 시작
+    	            speed: 500,  // 애니메이션 속도
+    	            pause: 3000,  // 애니메이션 유지 시간 (1000은 1초)
+    	            mode: 'horizontal', // 슬라이드 모드 ('fade', 'horizontal', 'vertical' 이 있음)
+    	            /* autoControls: true, // 시작 및 중지버튼 */
+    	            pager: true, // 페이지 표시 보여짐
+    			    autoHover: true   // 마우스 호버시 정지 여부
+    	        });
+    	    });
+      
+      </script>
+		<!-- 이미지 슬라이드 css -->    
+		<style>
+		.bx-wrapper {
+	         position: relative;
+	         margin-bottom: 60px;
+	         padding: 0;
+	         -ms-touch-action: pan-y;
+	         touch-action: pan-y;
+	         -moz-box-shadow: 0 0 5px #ffffff !important;
+	         -webkit-box-shadow: 0 0 5px #ffffff !important;
+	         box-shadow: 0 0 5px #ffffff !important;
+	         border: 9px solid #fff !important;
+	         background: #fff;
+         }
+		.bx-wrapper .bx-prev {
+			left: 265px;
+			background: url("resources/img/controls.png") 0 -32px no-repeat
+		}
+		
+		.bx-wrapper .bx-prev:focus, .bx-wrapper .bx-prev:hover {
+			background-position: 0 0
+		}
+		
+		.bx-wrapper .bx-next {
+			right: 262px;
+			background: url("resources/img/controls.png") -43px -32px no-repeat
+		}
+		
+		.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {
+			background-position: -43px 0
+		}
+		
+
+   
+    </style>
+
+      
+</head>
+    
+<body id="page-top">
+    
+                
+            
+	<!-- 이미지 슬라이드  -->
+	<ul class="bxslider">
+		<li><img style="width:100%;" src="/resources/image/1.jpg" /></li>
+		<li><img style="width:100%;" src="/resources/image/2.jpg" /></li>
+		<li><img style="width:100%;" src="/resources/image/3.jpg" /></li>
+		<li><img style="width:100%;" src="/resources/image/4.jpg" /></li>
+		<li><img style="width:100%;" src="/resources/image/5.jpg" /></li>
+		<li><img style="width:100%;" src="/resources/image/6.jpg" /></li>
+		<!-- <li><img src="/images/pic4.jpg" /></li> -->
+	</ul>
+
+	<!-- 이미지 슬라이드 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+
+
+  
+<!-------------------------------------  -->
+<!-- 
+
+ <!------------------------1차-------------------------------->
+
+ <div class="container" style="padding-top: 50px" style="padding-top: 75px" >
+    <div class="row mt-2 g-4">
+        <div class="col-md-3">
+            <div class="card p-1"><a href="/product/productList/12/스마트폰">
+                <div class="d-flex justify-content-between align-items-center p-2" style="height:124px">
+                    <div class="flex-column lh-1 imagename"> <span>스마트폰</span> <span></span> </div>
+                    <div> <img src="/resources/image/스마트폰.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2"><a href="/product/productList/11/노트북">
+                <div class="d-flex justify-content-between align-items-center p-2"  >
+                    <div class="flex-column lh-1 imagename"> <span>노트북</span> <span></span> </div>
+                    <div> <img src="/resources/image/노트북.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2"><a href="/product/productList/10/컴퓨터">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>컴퓨터</span> <span></span> </div>
+                    <div> <img src="/resources/image/컴퓨터.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2"><a href="/product/productList/13/태블릿">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>태블릿</span> <span></span> </div>
+                    <div> <img src="/resources/image/태블릿.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 75px">
+            <div class="card p-2tr5"><a href="/product/productList/30/TV">
+                <div class="d-flex justify-content-between align-items-center p-2" style="height:124px">
+                    <div class="flex-column lh-1 imagename"> <span>TV</span> <span></span> </div>
+                    <div> <img src="/resources/image/TV.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 75px">
+            <div class="card p-2"><a href="/product/productList/31/냉장고">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>냉장고</span> <span></span> </div>
+                    <div> <img src="/resources/image/냉장고.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 75px">
+            <div class="card p-2"><a href="/product/productList/32/식기세척기">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>식기</span><br> <span>세척기</span> </div>
+                    <div> <img src=" /resources/image/식기세척기.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 75px">
+            <div class="card p-2"><a href="/product/productList/33/세탁기">
+                <div class="d-flex justify-content-between align-items-center p-2" > 
+                    <div class="flex-column lh-1 imagename"> <span>세탁기</span> </div>
+                    <div> <img src="/resources/image/세탁기.jpg" height="100" width="100" /> </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!------------------------1차-------------------------------->
+ <!----------------------2차---------------------------------->
+
+  <!----------------------2차---------------------------------->
+  
+
+  <!-------------->
+  <!--=---------->
+  
+  
+		
+	<!----------------------3차---------------------------------->
+	
+
+
+<div class="container">
+  <div class="row">
+        
+        <c:forEach items="${productList }" var="productVO">
+        <div class="col-md-3">
+          <div class="card mb-4 shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <a href="${productVO.pdt_num }" class="proDetail">
+            	<img src="/product/displayFile?folderName=${productVO.pdt_img_folder }&fileName=s_${productVO.pdt_img}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+			</a>
+            <div class="card-body">
+              <p class="card-text">${productVO.pdt_name }</p>
+              <p class="card-text">
+              	<fmt:formatNumber type="currency" pattern="￦#,###" value="${productVO.pdt_price }" /> 원
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <input type="hidden" value="${productVO.pdt_num }" name="pdt_num"> 
+                  <button type="button" name="btnDirectOrder"  class="btn btn-sm btn-outline-secondary">바로구매</button>
+                  <button type="button" name="btnCart" class="btn btn-sm btn-outline-secondary">장바구니</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        </c:forEach>
+        
+        
+      </div>
+
+
+</div>
+
+
+  <script>
+
+    $(document).ready(function(){
+
+      //장바구니 클릭
+      $("button[name='btnCart']").on("click", function(){
+        
+        $.ajax({
+          url: '/cart/cart_add',
+          data: {pdt_num : $(this).parent().find("input[name='pdt_num']").val(), cart_amount : 1},  // javascript object구문
+          success : function(result) {
+            if(result == "success") {
+              alert("장바구니에 추가됨.");
+              if(confirm("장바구니로 이동하시겠습니까?")) {
+                location.href = "/cart/cart_list";
+              }
+            }
+          }
+        });
+      });
+
+
+      //바로구매
+      $("button[name='btnDirectOrder']").on("click", function() {
+
+          //주문작성 페이지
+          //상품코드, 수량: 기본값 1
+          let pdt_num = $(this).siblings("input[name='pdt_num']").val();  //           $("input[name='pdt_num']").val();
+          let odr_amount = 1;
+
+          let url = "/order/orderListInfo?pdt_num=" + pdt_num + "&odr_amount=" + odr_amount + "&type=direct";
+
+          console.log("주문작성URL: " + url);
+
+          location.href = url;
+
+      });
+
+      //상품이미지 클릭
+      $("a.proDetail").on("click", function(e) {
+        e.preventDefault();
+
+        let pdt_num = $(this).attr("href");
+
+        location.href = "/product/productDetail?pdt_num=" + pdt_num;
+      });
+
+    });
+
+  </script>  
+	
+	
+	
+	
+	<!-- -----------3차 끝 -->
+	
+		<!-- 헤더 카테고리와 이미지 슬라이드 구역 끝 -->
+       <%-- 
+	<div id="index_inner">
+		<c:import url=/productList.상품>
+			<c:param name="pdt_name" value="${pdt_name}"/>
+			<c:param name="pdt_price" value="${pdt_price}"/>
+			<c:param name="p_type" value="${p_type}"/>
+		</c:import>
+           
+	</div>      
+         --%>
+	
+	
+	<!----------------------4차---------------------------------->	
+	
+	  <%@include file="/WEB-INF/views/include/footer.jsp" %>
+</body>
+
+</html>
