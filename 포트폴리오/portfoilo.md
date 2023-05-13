@@ -22,9 +22,9 @@
 >  
 >기술 스택:  
 Web basices > HTML,CSS, JAVASCRIPT, Boot-strap <br>
-Language > JAVA, JSP, Android, Jquery
-Database > My-SQL
-Framework > Spring, My-batis
+Language > JAVA, JSP, Android, Jquery <br>
+Database > My-SQL <br>
+Framework > Spring, My-batis <br>
   
 >[프로젝트 상세 설명] https://github.com/mgk96/kimmall-project/tree/master 참고
 
