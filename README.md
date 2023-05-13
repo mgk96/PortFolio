@@ -1,4 +1,4 @@
 -   **GitHub 포트폴리오**
   - [PortFoilo.md](https://github.com/mgk96/PortFolio/blob/master/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/PortFoilo.md)
-- **각 프로젝트**(goQuality)
+- **각 프로젝트**()
   - [README.md](https://github.com/mgk96/kimmall-project/blob/master/README.md)
