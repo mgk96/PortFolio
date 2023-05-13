@@ -21,7 +21,7 @@
 >개발 기간: 2022-7 ~ 2023-1  
 >  
 >기술 스택:  
-Web basices > HTML,CSS, JAVASCRIPT, Boot-strap
+Web basices > HTML,CSS, JAVASCRIPT, Boot-strap <br>
 Language > JAVA, JSP, Android, Jquery
 Database > My-SQL
 Framework > Spring, My-batis
