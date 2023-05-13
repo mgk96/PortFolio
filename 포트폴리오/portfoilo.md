@@ -26,7 +26,7 @@ Language > JAVA, JSP, Android, Jquery
 Database > My-SQL
 Framework > Spring, My-batis
   
->[프로젝트 상세 설명] https://github.com/mgk96/kimmall-project 참고
+>[프로젝트 상세 설명] (https://github.com/mgk96/kimmall-project) 참고
 
 ---
 
