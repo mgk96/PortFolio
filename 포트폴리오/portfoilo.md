@@ -1,5 +1,5 @@
-# 한정수 포트폴리오
->캐치 프레이즈
+# 김민규 포트폴리오
+
 
 </br>
 
@@ -9,44 +9,29 @@
 </br>
 
 ## :pushpin: Contact
-- 이메일: rhep0828@gmail.com
-- 블로그: https://ryan-han.com
-- 깃헙: https://github.com/integerous
+- 이메일: mkkim1196@gmail.com
+- 블로그:(https://velog.io/@kmg511)
+- 깃헙: (https://github.com/mgk96)
 
 </br>
 
 ## :pushpin: Projects
-### 1. [goQuality](https://github.com/Integerous/goQuality)
->고퀄리티 개발 컨텐츠 공유 서비스 (개인 프로젝트)  
->개발 기간: 2019.2.18 ~ 2019.4.5  
+### 1. [shopping mall](https://github.com/mgk96/kimmall-project)
+>쇼핑몰 사이트 만들기 (개인 프로젝트)  
+>개발 기간: 2022-7 ~ 2023-1  
 >  
 >기술 스택:  
->Java 8 / Spring Boot / Gradle / Spring Data JPA / QueryDSL  
->H2 / MySQL / Spring Security / Jsoup / Vue.js / Element U  
->  
->[프로젝트 상세 설명](https://github.com/Integerous/goQuality) 참고
+Web basices > HTML,CSS, JAVASCRIPT, Boot-strap
+Language > JAVA, JSP, Android, Jquery
+Database > My-SQL
+Framework > Spring, My-batis
+  
+>[프로젝트 상세 설명] https://github.com/mgk96/kimmall-project 참고
 
 ---
 
-### 2. [두 번째 프로젝트]()
->두 번째 프로젝트 간략 소개  (팀 프로젝트)  
->개발 기간: 2020.7.18 ~ 2020.11.5  
->  
->기술 스택:  
->Java 8 / Spring Boot / Gradle / Spring Data JPA / QueryDSL  
->H2 / MySQL / Spring Security / Jsoup / Vue.js / Element U  
->  
->[프로젝트 상세 설명](https://github.com/Integerous/goQuality) 참고
 
 ---
 
-### 3. [세 번째 프로젝트]()
->세 번째 프로젝트 간략 소개  (개인 프로젝트)  
->개발 기간: 2018.1.18 ~ 2018.4.5  
->  
->기술 스택:  
->Java 8 / Spring Boot / Gradle / Spring Data JPA / QueryDSL  
->H2 / MySQL / Spring Security / Jsoup / Vue.js / Element U  
->  
->[프로젝트 상세 설명](https://github.com/Integerous/goQuality) 참고
+
 
