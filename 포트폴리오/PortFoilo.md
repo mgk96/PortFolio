@@ -10,8 +10,8 @@
 
 ## :pushpin: Contact
 - 이메일: mkkim1196@gmail.com
-- 블로그:(https://velog.io/@kmg511)
-- 깃헙: (https://github.com/mgk96)
+- 블로그:()
+- 깃헙: ()
 
 </br>
 
